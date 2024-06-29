@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f4;
+            background-color: rgba(244, 232, 215, 0.884);
         }
 
         header {
@@ -93,8 +93,11 @@
         .flexx p, .flexx img {
             flex: 1;
             margin: 10px;
+            transition: transform 0.3s ease-in-out;
         }
-
+        .flexx img:hover{
+        transform: scale(1.3);
+       } 
         p {
             padding-right: 100px;
         }
@@ -202,12 +205,15 @@
         </section>
         <section class="services">
             <h2>Our Services</h2>
+        <div class="flexx">
             <ul>
                 <li>Event Planning and Coordination</li>
                 <li>Venue Selection and Decoration</li>
                 <li>Catering Services</li>
                 <li>Entertainment and Performances</li>
             </ul>
+            <img src="./GES2061-Wedding-Event-Planner-935x572.jpg" alt="Wedding-Event-Planner">
+        </div>
         </section>
         <section class="contact">
             <h2>Contact Us</h2>
